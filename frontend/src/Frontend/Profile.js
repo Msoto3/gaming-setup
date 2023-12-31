@@ -25,7 +25,7 @@ const Profile = () => {
     }
     else{
      
-      axios.get("http://localhost:5000/routes/getSpecs",username).then((res)=>{
+      axios.get("https://gaming-setup-api.vercel.app/routes/getSpecs",username).then((res)=>{
             setUserSpecs(res.data)
       })
     }
