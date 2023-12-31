@@ -11,7 +11,7 @@ const Sign= () => {
 
   const login =() =>{
     const data = {username:username,password:password}
-    axios.post("http://localhost:5000/routes/login",data).then((res)=>{
+    axios.post("https://gaming-setup-api.vercel.app/routes/login",data).then((res)=>{
       if(res.data.error){
         alert(res.data.error)
         
